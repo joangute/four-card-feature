@@ -1,0 +1,122 @@
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: hsl(0, 0%, 98%);
+  padding: 5rem 10.25rem;
+  color: hsl(234, 12%, 34%);
+  min-height: 100vh;
+}
+
+h1{
+  margin: 0;
+  font-size: 2.25rem;      
+}
+
+h2{
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+p{
+  color: hsl(229, 6%, 66%);
+  font-size: 0.9375rem;
+}
+
+.subtitle{
+  font-size: 2.25rem;
+  font-weight: 200;
+}
+
+.title{
+  max-width: 31.25rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cards{
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  align-items: center;
+}
+
+.card{
+  border-radius: 0.5rem;
+  padding: 2rem 2rem 6.8rem;
+  background-color: white;
+  box-shadow: 0 1rem 1rem hsla(234, 12%, 34%,.1);
+  background-repeat: no-repeat;
+  background-position: bottom 2rem right 2rem;
+}
+
+.card p{
+  font-size: 0.875rem;
+}
+
+.supervisor{
+  border-top: 0.25rem solid hsl(180, 62%, 55%);
+  background-image: url("../images/icon-supervisor.svg");      
+}
+
+.team-builder{
+  border-top: 0.25rem solid hsl(0, 78%, 62%);
+  background-image: url("../images/icon-team-builder.svg");
+}
+
+.karma{
+  border-top: 0.25rem solid hsl(34, 97%, 64%);
+  background-image: url("../images/icon-karma.svg");
+  margin-top: 1.75rem;
+}
+
+.calculator{
+  border-top: 0.25rem solid hsl(212, 86%, 64%);
+  background-image: url("../images/icon-calculator.svg");
+}
+
+@media (max-width: 480px)
+{
+  body{
+    padding: 4.875rem 1.875rem;
+  }
+  h1{
+    font-size: 1.6rem;
+  }
+  .subtitle{
+    font-size: 1.6rem;
+  }
+  .cards{
+    margin-top: 4.875rem;
+    grid-template-columns: unset;
+    grid-template-rows: repeat(3, auto);
+    gap: 1.5rem;
+  }
+  .card{
+    padding: 1.5rem 1.5rem 6.8rem;
+    background-position: bottom 1.5rem right 1.5rem;
+  }
+  .card p{
+    font-size: 13.5px;
+  }      
+  .karma{
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 1024px){
+  body{
+    padding: 5rem 2rem;
+  }
+}
